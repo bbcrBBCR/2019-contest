@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>推箱子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/pushBox.css" />
+</head>
+<body>
+    <!-- 选择关卡-->
+    <div class="selectparent">
+    <select id='select'>
+        <option value="Checkpoint1">关卡一</option>
+        <option value="Checkpoint2">关卡二</option>
+        <option value="Checkpoint3">关卡三</option>
+        <option value="Checkpoint4">关卡四</option>
+        <option value="Checkpoint5">关卡五</option>
+        <option value="Checkpoint6">关卡六</option>
+        <option value="Checkpoint7">关卡七</option>
+        <option value="Checkpoint8">关卡八</option>
+        <option value="Checkpoint9">关卡九</option>
+        <option value="Checkpoint10">关卡十</option>
+    </select>
+    <input type="button" onclick="selectchecked()" value="选择">
+    </div>
+
+    <!-- 地图-->
+    <div class="box">
+   <div class="clear"></div>
+    <!--第一行-->
+    <div class="map" id='map00'></div>
+    <div class="map" id='map01'></div>
+    <div class="map" id='map02'></div>
+    <div class="map" id='map03'></div>
+    <div class="map" id='map04'></div>
+    <div class="map" id='map05'></div>
+    <div class="map" id='map06'></div>
+    <div class="map" id='map07'></div>
+    <div class="map" id='map08'></div>
+    <div class="map" id='map09'></div>
+    <div class="map" id='map010'></div>
+    <div class="map" id='map011'></div>
+    <div class="clear"></div>
+    
+    <!--第二行-->
+    <div class="map" id='map10'></div>
+    <div class="map" id='map11'></div>
+    <div class="map" id='map12'></div>
+    <div class="map" id='map13'></div>
+    <div class="map" id='map14'></div>
+    <div class="map" id='map15'></div>
+    <div class="map" id='map16'></div>
+    <div class="map" id='map17'></div>
+    <div class="map" id='map18'></div>
+    <div class="map" id='map19'></div>
+    <div class="map" id='map110'></div>
+    <div class="map" id='map111'></div>
+    <div class="clear"></div>
+
+    <!--第三行-->
+    <div class="map" id='map20'></div>
+    <div class="map" id='map21'></div>
+    <div class="map" id='map22'></div>
+    <div class="map" id='map23'></div>
+    <div class="map" id='map24'></div>
+    <div class="map" id='map25'></div>
+    <div class="map" id='map26'></div>
+    <div class="map" id='map27'></div>
+    <div class="map" id='map28'></div>
+    <div class="map" id='map29'></div>
+    <div class="map" id='map210'></div>
+    <div class="map" id='map211'></div>
+    <div class="clear"></div>
+
+    <!--第四行-->
+    <div class="map" id='map30'></div>
+    <div class="map" id='map31'></div>
+    <div class="map" id='map32'></div>
+    <div class="map" id='map33'></div>
+    <div class="map" id='map34'></div>
+    <div class="map" id='map35'></div>
+    <div class="map" id='map36'></div>
+    <div class="map" id='map37'></div>
+    <div class="map" id='map38'></div>
+    <div class="map" id='map39'></div>
+    <div class="map" id='map310'></div>
+    <div class="map" id='map311'></div>
+    <div class="clear"></div>
+
+    <!--第五行-->
+    <div class="map" id='map40'></div>
+    <div class="map" id='map41'></div>
+    <div class="map" id='map42'></div>
+    <div class="map" id='map43'></div>
+    <div class="map" id='map44'></div>
+    <div class="map" id='map45'></div>
+    <div class="map" id='map46'></div>
+    <div class="map" id='map47'></div>
+    <div class="map" id='map48'></div>
+    <div class="map" id='map49'></div>
+    <div class="map" id='map410'></div>
+    <div class="map" id='map411'></div>
+    <div class="clear"></div>
+
+    <!--第六行-->
+    <div class="map" id='map50'></div>
+    <div class="map" id='map51'></div>
+    <div class="map" id='map52'></div>
+    <div class="map" id='map53'></div>
+    <div class="map" id='map54'></div>
+    <div class="map" id='map55'></div>
+    <div class="map" id='map56'></div>
+    <div class="map" id='map57'></div>
+    <div class="map" id='map58'></div>
+    <div class="map" id='map59'></div>
+    <div class="map" id='map510'></div>
+    <div class="map" id='map511'></div>
+    <div class="clear"></div>
+
+    <!--第七行-->
+    <div class="map" id='map60'></div>
+    <div class="map" id='map61'></div>
+    <div class="map" id='map62'></div>
+    <div class="map" id='map63'></div>
+    <div class="map" id='map64'></div>
+    <div class="map" id='map65'></div>
+    <div class="map" id='map66'></div>
+    <div class="map" id='map67'></div>
+    <div class="map" id='map68'></div>
+    <div class="map" id='map69'></div>
+    <div class="map" id='map610'></div>
+    <div class="map" id='map611'></div>
+    <div class="clear"></div>
+
+    <!--第八行-->
+    <div class="map" id='map70'></div>
+    <div class="map" id='map71'></div>
+    <div class="map" id='map72'></div>
+    <div class="map" id='map73'></div>
+    <div class="map" id='map74'></div>
+    <div class="map" id='map75'></div>
+    <div class="map" id='map76'></div>
+    <div class="map" id='map77'></div>
+    <div class="map" id='map78'></div>
+    <div class="map" id='map79'></div>
+    <div class="map" id='map710'></div>
+    <div class="map" id='map711'></div>
+    <div class="clear"></div>
+
+        <!--第九行-->
+        <div class="map" id='map80'></div>
+        <div class="map" id='map81'></div>
+        <div class="map" id='map82'></div>
+        <div class="map" id='map83'></div>
+        <div class="map" id='map84'></div>
+        <div class="map" id='map85'></div>
+        <div class="map" id='map86'></div>
+        <div class="map" id='map87'></div>
+        <div class="map" id='map88'></div>
+        <div class="map" id='map89'></div>
+        <div class="map" id='map810'></div>
+        <div class="map" id='map811'></div>
+        <div class="clear"></div>
+        <p id='win'>你赢了，请重新选择关卡</p><br/>
+        <p id='transport'>很遗憾你输了，请重新选择关卡</p>
+    </div>
+</body>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/pushBox.js"></script>
+</html>
